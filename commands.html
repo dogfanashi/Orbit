@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Complete Orbit Discord bot command reference and permission hierarchy.">
+  <meta name="description" content="Complete Orbit Discord bot command reference, including economy, games, utilities, moderation, management, and administration.">
   <title>Commands — Orbit</title>
   <link rel="icon" href="assets/orbit-logo.png">
   <link rel="stylesheet" href="styles.css">
@@ -12,6 +12,7 @@
 <body>
   <div class="background-glow"></div>
 
+  <!-- NAVIGATION -->
   <nav class="navbar">
     <a class="brand" href="index.html">
       <img src="assets/orbit-logo.png" alt="Orbit logo">
@@ -35,24 +36,31 @@
     </a>
   </nav>
 
+
   <main class="legal-page">
 
+    <!-- HEADER -->
     <div class="eyebrow">COMMAND CENTER</div>
 
     <h1>Orbit Commands</h1>
 
     <p class="lead">
-      Explore Orbit's commands by permission level. Commands are automatically
-      protected according to Discord permissions and Orbit's server-specific
-      moderator system.
+      Explore Orbit's commands by category and permission level.
+      All commands use Discord's slash command system.
     </p>
+
 
     <!-- PERMISSION HIERARCHY -->
     <section class="command-hierarchy">
 
       <div class="eyebrow">PERMISSION HIERARCHY</div>
 
-      <h2>Who can use Orbit?</h2>
+      <h2>How Orbit permissions work</h2>
+
+      <p>
+        Orbit uses Discord permissions, server roles, and Orbit's custom
+        moderator-role system to determine who can use staff commands.
+      </p>
 
       <div class="hierarchy">
 
@@ -60,7 +68,7 @@
           <div class="hierarchy-icon">👑</div>
           <div>
             <strong>Server Owner</strong>
-            <span>Full access to Orbit</span>
+            <span>Full access to Orbit and server configuration</span>
           </div>
         </div>
 
@@ -70,7 +78,7 @@
           <div class="hierarchy-icon">🔴</div>
           <div>
             <strong>Administrator</strong>
-            <span>Full administrative and moderation access</span>
+            <span>Administrative, configuration, and moderation access</span>
           </div>
         </div>
 
@@ -80,7 +88,7 @@
           <div class="hierarchy-icon">🟦</div>
           <div>
             <strong>Manager</strong>
-            <span>Server management and moderation</span>
+            <span>Server management and moderation access</span>
           </div>
         </div>
 
@@ -90,7 +98,7 @@
           <div class="hierarchy-icon">🛡️</div>
           <div>
             <strong>Moderator</strong>
-            <span>Moderation and member management</span>
+            <span>Moderation and member-management access</span>
           </div>
         </div>
 
@@ -100,29 +108,32 @@
           <div class="hierarchy-icon">👤</div>
           <div>
             <strong>Member</strong>
-            <span>General and public commands</span>
+            <span>General, economy, games, utility, and social commands</span>
           </div>
         </div>
 
       </div>
 
       <p class="hierarchy-note">
-        Orbit respects Discord's permission system and role hierarchy.
-        Server owners can also designate custom moderator roles using
-        <code>/addmod</code>.
+        Server owners can designate additional moderator roles using
+        <code>/addmod</code>. Orbit also respects Discord's permission and
+        role hierarchy.
       </p>
 
     </section>
 
 
+    <!-- ========================= -->
     <!-- MEMBER COMMANDS -->
+    <!-- ========================= -->
+
     <section class="command-section">
 
       <div class="section-heading">
         <div class="eyebrow">👤 MEMBER</div>
-        <h2>Member Commands</h2>
+        <h2>General Commands</h2>
         <p>
-          Commands available to regular members of the server.
+          Basic commands available to members of the server.
         </p>
       </div>
 
@@ -134,32 +145,388 @@
         </div>
 
         <div class="command-row">
-          <code>/tags</code>
-          <span>View available server tags.</span>
+          <code>/info</code>
+          <span>View information about Orbit.</span>
         </div>
 
         <div class="command-row">
-          <code>/tag</code>
-          <span>View or use a server tag.</span>
+          <code>/uptime</code>
+          <span>View Orbit's current uptime.</span>
         </div>
 
         <div class="command-row">
-          <code>/star</code>
-          <span>View starboard information for a message.</span>
+          <code>/space</code>
+          <span>Get information about the space station.</span>
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- MODERATOR COMMANDS -->
+    <!-- ========================= -->
+    <!-- UTILITY COMMANDS -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🔧 UTILITY</div>
+        <h2>Utility Commands</h2>
+        <p>
+          Useful information and tools for members and servers.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/utility info</code>
+          <span>Get information about Orbit.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility uptime</code>
+          <span>Check Orbit's uptime.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility avatar</code>
+          <span>View a user's avatar.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility membercount</code>
+          <span>View the server's member count.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility serverinfo</code>
+          <span>View information about the current server.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility whois</code>
+          <span>View information about a Discord user.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility randomcolor</code>
+          <span>Generate a random color.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/utility color</code>
+          <span>View or generate color information.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- ECONOMY -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">💰 ECONOMY</div>
+        <h2>Economy Commands</h2>
+        <p>
+          Earn, spend, transfer, and manage your Orbit currency.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/economy balance</code>
+          <span>View your current coin balance.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy daily</code>
+          <span>Claim your daily coin reward.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy work</code>
+          <span>Work to earn coins.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy pay</code>
+          <span>Transfer coins to another user.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy rob</code>
+          <span>Attempt to rob another user.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy profile</code>
+          <span>View your economy profile.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy leaderboard</code>
+          <span>View the server economy leaderboard.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy buy_item_chicken</code>
+          <span>Purchase a chicken for the economy system.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/economy chicken</code>
+          <span>View or interact with your purchased chicken.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- GAMES -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🎮 GAMES</div>
+        <h2>Games & Battles</h2>
+        <p>
+          Take a break with Orbit's games and battle features.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/games rps</code>
+          <span>Play Rock Paper Scissors.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/games flipcoin</code>
+          <span>Flip a virtual coin.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/games roll</code>
+          <span>Roll a virtual die.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/battle</code>
+          <span>Open your battle profile and start a battle.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/deck</code>
+          <span>View a user's battle deck.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/rps</code>
+          <span>Play Rock Paper Scissors against Orbit.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/flip</code>
+          <span>Flip a coin.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FUN -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">😂 FUN</div>
+        <h2>Fun Commands</h2>
+        <p>
+          Entertainment and community commands.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/dadjoke</code>
+          <span>Get a random Dad joke.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/cat</code>
+          <span>Find a cute cat picture.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/pug</code>
+          <span>Find a cute pug picture.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/dog</code>
+          <span>Find a cute dog picture.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/norris</code>
+          <span>Get a random Chuck Norris fact.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/pokemon</code>
+          <span>Get information about a Pokémon.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/itunes</code>
+          <span>Get information about a song.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/github</code>
+          <span>Get information about a GitHub repository.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/poll</code>
+          <span>Create a poll with up to 10 choices.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/poll show</code>
+          <span>View the results of a poll.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- XP / SOCIAL -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">⭐ XP & SOCIAL</div>
+        <h2>Leveling Commands</h2>
+        <p>
+          Track your activity, XP, and server rankings.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/profile</code>
+          <span>View your XP profile.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/profile [user]</code>
+          <span>View another user's XP profile.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/leaderboard</code>
+          <span>View the server's XP leaderboard.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- TAGS -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🏷️ TAGS</div>
+        <h2>Tag Commands</h2>
+        <p>
+          Browse and use server-created tags.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/tags</code>
+          <span>View available tags.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tags [category]</code>
+          <span>View tags within a category.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag [name]</code>
+          <span>Use a server tag.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag category</code>
+          <span>Manage or view tag categories.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag create</code>
+          <span>Create a server tag.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag edit</code>
+          <span>Edit an existing tag.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag delete</code>
+          <span>Delete a server tag.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/tag raw</code>
+          <span>View the raw contents of a tag.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- MODERATION -->
+    <!-- ========================= -->
+
     <section class="command-section">
 
       <div class="section-heading">
         <div class="eyebrow">🛡️ MODERATOR+</div>
         <h2>Moderation Commands</h2>
         <p>
-          Commands for moderators and authorized staff members.
+          Moderation commands are restricted to authorized moderators and
+          higher-level staff.
         </p>
       </div>
 
@@ -191,6 +558,11 @@
         </div>
 
         <div class="command-row">
+          <code>/kick</code>
+          <span>Kick a member.</span>
+        </div>
+
+        <div class="command-row">
           <code>/mute</code>
           <span>Mute a member.</span>
         </div>
@@ -203,11 +575,6 @@
         <div class="command-row">
           <code>/undeafen</code>
           <span>Undeafen a member.</span>
-        </div>
-
-        <div class="command-row">
-          <code>/kick</code>
-          <span>Kick a member.</span>
         </div>
 
         <div class="command-row">
@@ -227,22 +594,12 @@
 
         <div class="command-row">
           <code>/ban noappeal</code>
-          <span>Ban a member without creating an appeal option.</span>
+          <span>Ban a member without an appeal option.</span>
         </div>
 
         <div class="command-row">
           <code>/unban</code>
           <span>Unban a member.</span>
-        </div>
-
-        <div class="command-row">
-          <code>/purge</code>
-          <span>Bulk delete messages with advanced filtering options.</span>
-        </div>
-
-        <div class="command-row">
-          <code>/members</code>
-          <span>List members belonging to selected roles.</span>
         </div>
 
         <div class="command-row">
@@ -267,7 +624,7 @@
 
         <div class="command-row">
           <code>/reason</code>
-          <span>Add or update a moderation case reason.</span>
+          <span>Supply a reason for a moderation case.</span>
         </div>
 
         <div class="command-row">
@@ -282,17 +639,17 @@
 
         <div class="command-row">
           <code>/notes</code>
-          <span>View staff notes for a member.</span>
+          <span>View notes for a member.</span>
         </div>
 
         <div class="command-row">
           <code>/editnote</code>
-          <span>Edit a staff note.</span>
+          <span>Edit a member note.</span>
         </div>
 
         <div class="command-row">
           <code>/delnote</code>
-          <span>Delete a staff note.</span>
+          <span>Delete a member note.</span>
         </div>
 
         <div class="command-row">
@@ -300,53 +657,264 @@
           <span>Delete all notes for a member.</span>
         </div>
 
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- MESSAGE / CHANNEL MODERATION -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🧹 MODERATION</div>
+        <h2>Message & Channel Moderation</h2>
+        <p>
+          Tools for managing messages, channels, and server activity.
+        </p>
+      </div>
+
+      <div class="command-list">
+
+        <div class="command-row">
+          <code>/purge</code>
+          <span>Delete messages in bulk, up to the supported limit.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge user</code>
+          <span>Delete messages from a specific user.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge match</code>
+          <span>Delete messages matching specific text.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge not</code>
+          <span>Delete messages that do not match specified text.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge startswith</code>
+          <span>Delete messages starting with specific text.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge endswith</code>
+          <span>Delete messages ending with specific text.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge links</code>
+          <span>Delete messages containing links.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge invites</code>
+          <span>Delete Discord invite messages.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge images</code>
+          <span>Delete messages containing images.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge mentions</code>
+          <span>Delete messages containing mentions.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge embeds</code>
+          <span>Delete messages containing embeds.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge bots</code>
+          <span>Delete messages sent by bots.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge humans</code>
+          <span>Delete messages sent by human users.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge text</code>
+          <span>Delete text-based messages.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/purge after</code>
+          <span>Delete messages after a specified message.</span>
+        </div>
+
         <div class="command-row">
           <code>/lock</code>
-          <span>Lock a channel.</span>
+          <span>Lock a channel with optional timing and messaging.</span>
         </div>
 
         <div class="command-row">
           <code>/unlock</code>
-          <span>Unlock a channel.</span>
+          <span>Unlock a previously locked channel.</span>
         </div>
 
         <div class="command-row">
           <code>/lockdown</code>
-          <span>Lock channels defined by moderation settings.</span>
+          <span>Lock channels configured for moderation lockdowns.</span>
         </div>
 
         <div class="command-row">
-          <code>/slowmode</code>
-          <span>Configure channel or user slowmode.</span>
+          <code>/slowmode channel</code>
+          <span>Configure channel slowmode.</span>
         </div>
+
+        <div class="command-row">
+          <code>/slowmode user</code>
+          <span>Configure user slowmode.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/slowmode discord</code>
+          <span>Configure Discord-level slowmode behavior.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- ROLE MANAGEMENT -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🎭 MODERATOR+</div>
+        <h2>Role & Member Management</h2>
+        <p>
+          Manage member roles and temporary role assignments.
+        </p>
+      </div>
+
+      <div class="command-list">
 
         <div class="command-row">
           <code>/role</code>
-          <span>Add, remove, or toggle roles for members.</span>
+          <span>Add, remove, or toggle roles.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role add</code>
+          <span>Add roles to a member.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role remove</code>
+          <span>Remove roles from a member.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role toggle</code>
+          <span>Toggle roles on a member.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role removeall</code>
+          <span>Remove all manageable roles from a member.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role all</code>
+          <span>Assign or remove a role from all eligible members.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role bots</code>
+          <span>Assign or remove a role from bots.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role humans</code>
+          <span>Assign or remove a role from human members.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role in</code>
+          <span>Manage roles for members within another role.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role status</code>
+          <span>View the current role operation status.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/role cancel</code>
+          <span>Cancel an active role operation.</span>
         </div>
 
         <div class="command-row">
           <code>/temprole</code>
-          <span>Assign a role for a limited amount of time.</span>
+          <span>Manage temporary roles.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/temprole add</code>
+          <span>Give a member a temporary role.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/temprole remove</code>
+          <span>Remove a temporary role assignment.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/temprole toggle</code>
+          <span>Toggle a temporary role.</span>
         </div>
 
         <div class="command-row">
           <code>/rolepersist</code>
+          <span>Manage persistent roles.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/rolepersist add</code>
           <span>Make a role persist when a member leaves and rejoins.</span>
         </div>
 
+        <div class="command-row">
+          <code>/rolepersist remove</code>
+          <span>Remove a persistent role assignment.</span>
+        </div>
+
+        <div class="command-row">
+          <code>/rolepersist toggle</code>
+          <span>Toggle role persistence.</span>
+        </div>
+
       </div>
+
     </section>
 
 
-    <!-- MANAGER COMMANDS -->
+    <!-- ========================= -->
+    <!-- MANAGER -->
+    <!-- ========================= -->
+
     <section class="command-section">
 
       <div class="section-heading">
         <div class="eyebrow">🟦 MANAGER+</div>
-        <h2>Management Commands</h2>
+        <h2>Server Management</h2>
         <p>
-          Server management tools for authorized managers and administrators.
+          Advanced server management tools for managers and administrators.
         </p>
       </div>
 
@@ -364,17 +932,17 @@
 
         <div class="command-row">
           <code>/rolecolor</code>
-          <span>Change the color of a role.</span>
+          <span>Change a role's color.</span>
         </div>
 
         <div class="command-row">
           <code>/rolename</code>
-          <span>Change the name of a role.</span>
+          <span>Change a role's name.</span>
         </div>
 
         <div class="command-row">
           <code>/mentionable</code>
-          <span>Toggle whether a role can be mentioned.</span>
+          <span>Toggle whether a role is mentionable.</span>
         </div>
 
         <div class="command-row">
@@ -387,9 +955,30 @@
           <span>Change a member's nickname.</span>
         </div>
 
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- ANNOUNCEMENTS -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">📢 MANAGER+</div>
+        <h2>Announcements</h2>
+        <p>
+          Send structured announcements through Orbit.
+        </p>
+      </div>
+
+      <div class="command-list">
+
         <div class="command-row">
           <code>/announce</code>
-          <span>Send an announcement through Orbit.</span>
+          <span>Send an announcement using Orbit.</span>
         </div>
 
         <div class="command-row">
@@ -399,17 +988,38 @@
 
         <div class="command-row">
           <code>/announce here</code>
-          <span>Send an announcement mentioning active members.</span>
+          <span>Send an announcement mentioning online members.</span>
         </div>
 
         <div class="command-row">
           <code>/announce role</code>
-          <span>Send an announcement mentioning a specific role.</span>
+          <span>Send an announcement mentioning a selected role.</span>
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- GIVEAWAYS -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">🎁 MANAGER+</div>
+        <h2>Giveaways</h2>
+        <p>
+          Create and manage server giveaways.
+        </p>
+      </div>
+
+      <div class="command-list">
 
         <div class="command-row">
           <code>/giveaway create</code>
-          <span>Create a server giveaway.</span>
+          <span>Create a giveaway.</span>
         </div>
 
         <div class="command-row">
@@ -422,24 +1032,45 @@
           <span>Reroll a giveaway winner.</span>
         </div>
 
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- IGNORE / CUSTOM COMMANDS -->
+    <!-- ========================= -->
+
+    <section class="command-section">
+
+      <div class="section-heading">
+        <div class="eyebrow">⚙️ MANAGER+</div>
+        <h2>Server Configuration</h2>
+        <p>
+          Configure how Orbit behaves within your server.
+        </p>
+      </div>
+
+      <div class="command-list">
+
         <div class="command-row">
           <code>/ignorechannel</code>
-          <span>Toggle command usage in a channel.</span>
+          <span>Toggle Orbit commands in a channel.</span>
         </div>
 
         <div class="command-row">
           <code>/ignoreuser</code>
-          <span>Toggle command usage for a user.</span>
+          <span>Toggle Orbit commands for a user.</span>
         </div>
 
         <div class="command-row">
           <code>/ignorerole</code>
-          <span>Toggle command usage for a role.</span>
+          <span>Toggle Orbit commands for a role.</span>
         </div>
 
         <div class="command-row">
           <code>/ignored</code>
-          <span>View ignored users, roles, and channels.</span>
+          <span>List ignored users, roles, and channels.</span>
         </div>
 
         <div class="command-row">
@@ -463,17 +1094,22 @@
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- ADMIN COMMANDS -->
+    <!-- ========================= -->
+    <!-- ADMIN -->
+    <!-- ========================= -->
+
     <section class="command-section">
 
       <div class="section-heading">
         <div class="eyebrow">👑 ADMINISTRATOR</div>
         <h2>Administrator Commands</h2>
         <p>
-          High-level commands that control Orbit's configuration and permissions.
+          High-level commands that control Orbit's permissions and
+          configuration.
         </p>
       </div>
 
@@ -481,12 +1117,12 @@
 
         <div class="command-row">
           <code>/addmod</code>
-          <span>Add a server role to Orbit's moderator system.</span>
+          <span>Add a moderator role to Orbit's permission system.</span>
         </div>
 
         <div class="command-row">
           <code>/delmod</code>
-          <span>Remove a role from Orbit's moderator system.</span>
+          <span>Remove a moderator role from Orbit.</span>
         </div>
 
         <div class="command-row">
@@ -506,30 +1142,35 @@
 
         <div class="command-row">
           <code>/prefix</code>
-          <span>View or configure the server's command prefix.</span>
+          <span>View or configure the server command prefix.</span>
         </div>
 
         <div class="command-row">
           <code>/diagnose</code>
-          <span>Diagnose a command or module for potential problems.</span>
+          <span>Diagnose an Orbit command or module.</span>
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- SECURITY NOTICE -->
+    <!-- ========================= -->
+    <!-- PERMISSION NOTICE -->
+    <!-- ========================= -->
+
     <section class="callout">
 
       <div>
-        <div class="eyebrow">SECURITY & PERMISSIONS</div>
+        <div class="eyebrow">🔐 PERMISSIONS</div>
 
-        <h2>Built around Discord's permissions.</h2>
+        <h2>Built around Discord's permission system.</h2>
 
         <p>
-          Orbit does not grant users permissions they do not already have.
-          Moderation actions are subject to Discord permissions, Orbit's
-          configured moderator roles, and Discord's role hierarchy.
+          Orbit's staff commands are restricted according to server
+          permissions, Orbit's configured moderator roles, and Discord's
+          role hierarchy. Orbit does not override Discord's permission
+          system.
         </p>
       </div>
 
@@ -547,6 +1188,7 @@
   </main>
 
 
+  <!-- FOOTER -->
   <footer>
 
     <div class="footer-brand">
@@ -565,7 +1207,7 @@
       <a href="privacy.html">Privacy</a>
     </div>
 
-    <p>© 2026 Orbit. Not affiliated with Discord Inc.</p>
+    <p>© 2026 Orbit. All rights reserved. Not affiliated with Discord Inc.</p>
 
   </footer>
 
