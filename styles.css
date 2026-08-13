@@ -1,1 +1,1075 @@
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#070a10;color:#f5f8ff;line-height:1.6;min-height:100vh}.background-glow{position:fixed;inset:-25%;pointer-events:none;background:radial-gradient(circle at 50% 10%,rgba(55,150,255,.18),transparent 28%),radial-gradient(circle at 85% 50%,rgba(80,110,255,.09),transparent 25%);z-index:-1}.navbar{height:76px;max-width:1180px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.06)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:white;font-weight:900;letter-spacing:2px}.brand img{width:38px;height:38px;object-fit:cover;border-radius:12px}.nav-links{display:flex;gap:26px}.nav-links a,.footer-links a{color:#aeb8c9;text-decoration:none;font-size:14px}.nav-links a:hover,.footer-links a:hover{color:white}.nav-button,.primary-button{background:#edf5ff;color:#07101d;text-decoration:none;font-weight:800;border-radius:12px;padding:11px 17px;box-shadow:0 8px 28px rgba(90,160,255,.14)}.hero{max-width:900px;margin:0 auto;padding:125px 24px 95px;text-align:center}.hero-badge,.eyebrow{display:inline-block;color:#8fc7ff;font-size:12px;font-weight:900;letter-spacing:2px}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1.04;letter-spacing:-3px;margin:20px 0}.hero h1 span{background:linear-gradient(90deg,#fff,#71b8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;margin:0 auto;color:#aab5c6;font-size:18px}.hero-buttons{display:flex;justify-content:center;gap:12px;margin:32px 0 16px;flex-wrap:wrap}.primary-button{display:inline-block}.secondary-button{display:inline-block;padding:10px 17px;border:1px solid rgba(255,255,255,.13);border-radius:12px;color:#eaf2ff;text-decoration:none;font-weight:750;background:rgba(255,255,255,.04)}.hero-note{color:#647187;font-size:13px}.stats{max-width:800px;margin:0 auto 110px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.025);overflow:hidden}.stats div{padding:25px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}.stats div:last-child{border-right:0}.stats strong{display:block;font-size:25px}.stats span{font-size:12px;color:#78869b}.section,.callout{max-width:1100px;margin:0 auto;padding:0 24px 110px}.section-heading{text-align:center;margin-bottom:45px}.section h2,.callout h2{font-size:40px;letter-spacing:-1.5px;margin:8px 0}.section-heading p,.callout p{color:#8794a8}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature-card{padding:27px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.025);transition:.2s}.feature-card:hover{transform:translateY(-4px);border-color:rgba(110,180,255,.25);background:rgba(110,180,255,.045)}.icon{font-size:27px;margin-bottom:16px}.feature-card h3{font-size:18px;margin-bottom:7px}.feature-card p{font-size:14px;color:#8592a5}.callout{padding-bottom:120px}.callout>div{border:1px solid rgba(110,180,255,.16);background:linear-gradient(120deg,rgba(65,145,255,.09),rgba(255,255,255,.025));border-radius:22px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:30px}.callout h2{font-size:30px}.callout .primary-button{flex-shrink:0}footer{border-top:1px solid rgba(255,255,255,.07);max-width:1180px;margin:auto;padding:30px 24px 45px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand img{width:36px;height:36px;border-radius:10px;object-fit:cover}.footer-brand strong,.footer-brand span{display:block}.footer-brand strong{font-size:13px;letter-spacing:2px}.footer-brand span{font-size:11px;color:#68758a}.footer-links{display:flex;gap:22px}.footer-links a{font-size:12px}footer p{grid-column:1/-1;color:#4f5c70;font-size:11px}.legal-page{max-width:900px;margin:0 auto;padding:90px 24px 120px}.legal-page h1{font-size:55px;letter-spacing:-2px;line-height:1.1;margin:10px 0}.lead{color:#8491a4;margin-bottom:55px}.legal-section{margin:0 0 38px}.legal-section h2{font-size:21px;margin-bottom:10px}.legal-section p,.legal-section li{color:#9ba7b8;font-size:15px}.legal-section ul{padding-left:20px}.legal-note{padding:18px;border:1px solid rgba(255,190,80,.15);background:rgba(255,190,80,.04);border-radius:13px;color:#aeb3bd;font-size:13px}.command-list{border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden}.command-row{display:flex;justify-content:space-between;gap:20px;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.025)}.command-row:last-child{border-bottom:0}.command-row code{color:#8bc5ff;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800}.command-row span{color:#8b97a9;text-align:right}@media(max-width:760px){.nav-links{display:none}.nav-button{padding:9px 12px}.hero{padding-top:90px}.stats{margin:0 24px 85px;grid-template-columns:1fr}.stats div{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}.stats div:last-child{border-bottom:0}.feature-grid{grid-template-columns:1fr}.callout>div{display:block}.callout .primary-button{margin-top:20px}.legal-page h1{font-size:42px}.command-row{display:block}.command-row span{display:block;text-align:left;margin-top:5px}footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
+/* =========================================
+   ORBIT — GLOBAL STYLES
+   DogFanAshi Content Creation Dev Team
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #070a10;
+  color: #f5f8ff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   BACKGROUND
+   ========================================= */
+
+.background-glow {
+  position: fixed;
+  inset: -25%;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(55, 150, 255, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(80, 110, 255, 0.09),
+      transparent 25%
+    );
+
+  z-index: -1;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+  height: 76px;
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: white;
+
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-links a,
+.footer-links a {
+  color: #aeb8c9;
+  text-decoration: none;
+  font-size: 14px;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nav-links a:hover,
+.footer-links a:hover {
+  color: white;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.nav-button,
+.primary-button {
+  background: #edf5ff;
+  color: #07101d;
+
+  text-decoration: none;
+  font-weight: 800;
+
+  border-radius: 12px;
+  padding: 11px 17px;
+
+  box-shadow: 0 8px 28px rgba(90, 160, 255, 0.14);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(90, 160, 255, 0.2);
+}
+
+.primary-button {
+  display: inline-block;
+}
+
+.secondary-button {
+  display: inline-block;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+
+  color: #eaf2ff;
+  text-decoration: none;
+  font-weight: 750;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.secondary-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(110, 180, 255, 0.3);
+  background: rgba(110, 180, 255, 0.07);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 125px 24px 95px;
+
+  text-align: center;
+}
+
+.hero-badge,
+.eyebrow {
+  display: inline-block;
+
+  color: #8fc7ff;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 7vw, 78px);
+
+  line-height: 1.04;
+  letter-spacing: -3px;
+
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #71b8ff
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto;
+
+  color: #aab5c6;
+
+  font-size: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 32px 0 16px;
+
+  flex-wrap: wrap;
+}
+
+.hero-note {
+  color: #647187;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   STATS
+   ========================================= */
+
+.stats {
+  max-width: 800px;
+
+  margin: 0 auto 110px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  overflow: hidden;
+}
+
+.stats div {
+  padding: 25px;
+
+  text-align: center;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stats div:last-child {
+  border-right: 0;
+}
+
+.stats strong {
+  display: block;
+  font-size: 25px;
+}
+
+.stats span {
+  font-size: 12px;
+  color: #78869b;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.section,
+.callout {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 0 24px 110px;
+}
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.section h2,
+.callout h2 {
+  font-size: 40px;
+
+  letter-spacing: -1.5px;
+
+  margin: 8px 0;
+}
+
+.section-heading p,
+.callout p {
+  color: #8794a8;
+}
+
+
+/* =========================================
+   FEATURE GRID
+   ========================================= */
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.feature-card {
+  padding: 27px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(110, 180, 255, 0.25);
+
+  background: rgba(110, 180, 255, 0.045);
+}
+
+.icon {
+  font-size: 27px;
+
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+
+  margin-bottom: 7px;
+}
+
+.feature-card p {
+  font-size: 14px;
+
+  color: #8592a5;
+}
+
+
+/* =========================================
+   LEGAL & OWNERSHIP
+   ========================================= */
+
+.legal-home {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 20px 24px 120px;
+}
+
+.legal-home .section-heading {
+  margin-bottom: 45px;
+}
+
+.legal-home .section-heading p strong {
+  color: #dbeaff;
+}
+
+
+/* Legal Cards */
+
+.legal-home-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.legal-home-card {
+  position: relative;
+
+  padding: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.legal-home-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(110, 180, 255, 0.4),
+      transparent
+    );
+
+  opacity: 0.5;
+}
+
+.legal-home-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(110, 180, 255, 0.25);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(70, 150, 255, 0.06),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+.legal-home-card .icon {
+  font-size: 27px;
+
+  margin-bottom: 14px;
+}
+
+.legal-home-card h3 {
+  font-size: 19px;
+
+  margin-bottom: 8px;
+}
+
+.legal-home-card p {
+  color: #8592a5;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* Ownership Notice */
+
+.legal-home-notice {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-top: 20px;
+
+  padding: 23px 26px;
+
+  border: 1px solid rgba(110, 180, 255, 0.14);
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(65, 145, 255, 0.07),
+      rgba(255, 255, 255, 0.02)
+    );
+}
+
+.legal-home-notice strong {
+  color: #dcecff;
+
+  font-size: 14px;
+}
+
+.legal-home-notice span {
+  color: #77869a;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* Legal Links */
+
+.legal-home-links {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 24px;
+
+  margin-top: 22px;
+}
+
+.legal-home-links a {
+  color: #8ebff0;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.legal-home-links a:hover {
+  color: white;
+}
+
+
+/* =========================================
+   CALLOUT
+   ========================================= */
+
+.callout {
+  padding-bottom: 120px;
+}
+
+.callout > div {
+  border: 1px solid rgba(110, 180, 255, 0.16);
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(65, 145, 255, 0.09),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.callout h2 {
+  font-size: 30px;
+}
+
+.callout .primary-button {
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding: 30px 24px 45px;
+
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  gap: 22px;
+
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.footer-brand img {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+}
+
+.footer-brand strong,
+.footer-brand span {
+  display: block;
+}
+
+.footer-brand strong {
+  font-size: 13px;
+
+  letter-spacing: 2px;
+}
+
+.footer-brand span {
+  font-size: 11px;
+
+  color: #68758a;
+}
+
+.footer-links {
+  display: flex;
+
+  gap: 22px;
+}
+
+.footer-links a {
+  font-size: 12px;
+}
+
+footer p {
+  grid-column: 1 / -1;
+
+  color: #4f5c70;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   LEGAL PAGES
+   ========================================= */
+
+.legal-page {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 90px 24px 120px;
+}
+
+.legal-page h1 {
+  font-size: 55px;
+
+  letter-spacing: -2px;
+
+  line-height: 1.1;
+
+  margin: 10px 0;
+}
+
+.lead {
+  color: #8491a4;
+
+  margin-bottom: 55px;
+}
+
+.legal-section {
+  margin: 0 0 38px;
+}
+
+.legal-section h2 {
+  font-size: 21px;
+
+  margin-bottom: 10px;
+}
+
+.legal-section p,
+.legal-section li {
+  color: #9ba7b8;
+
+  font-size: 15px;
+}
+
+.legal-section ul {
+  padding-left: 20px;
+}
+
+.legal-note {
+  padding: 18px;
+
+  border: 1px solid rgba(110, 180, 255, 0.15);
+
+  background: rgba(110, 180, 255, 0.04);
+
+  border-radius: 13px;
+
+  color: #aeb3bd;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   COMMAND PAGES
+   ========================================= */
+
+.command-list {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+.command-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 18px 22px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    background 0.2s ease;
+}
+
+.command-row:hover {
+  background: rgba(110, 180, 255, 0.035);
+}
+
+.command-row:last-child {
+  border-bottom: 0;
+}
+
+.command-row code {
+  color: #8bc5ff;
+
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+
+  font-weight: 800;
+}
+
+.command-row span {
+  color: #8b97a9;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   COMMAND HIERARCHY
+   ========================================= */
+
+.command-hierarchy {
+  margin-bottom: 80px;
+}
+
+.hierarchy {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.hierarchy-card {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 18px 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hierarchy-card:hover {
+  transform: translateX(4px);
+
+  border-color: rgba(110, 180, 255, 0.22);
+}
+
+.hierarchy-icon {
+  font-size: 25px;
+
+  min-width: 35px;
+
+  text-align: center;
+}
+
+.hierarchy-card strong {
+  display: block;
+
+  font-size: 16px;
+}
+
+.hierarchy-card span {
+  display: block;
+
+  color: #7f8da1;
+
+  font-size: 13px;
+
+  margin-top: 2px;
+}
+
+.hierarchy-arrow {
+  color: #526176;
+
+  font-size: 20px;
+
+  padding: 6px 0;
+}
+
+.hierarchy-note {
+  max-width: 700px;
+
+  margin: 22px auto 0;
+
+  color: #718096;
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+.hierarchy-note code {
+  color: #8bc5ff;
+
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .legal-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-button {
+    padding: 9px 12px;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    padding-top: 90px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+
+  /* Stats */
+
+  .stats {
+    margin: 0 24px 85px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .stats div {
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stats div:last-child {
+    border-bottom: 0;
+  }
+
+
+  /* Features */
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Legal */
+
+  .legal-home {
+    padding-bottom: 90px;
+  }
+
+  .legal-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-home-links {
+    justify-content: flex-start;
+
+    gap: 15px;
+  }
+
+
+  /* Callout */
+
+  .callout > div {
+    display: block;
+
+    padding: 30px;
+  }
+
+  .callout .primary-button {
+    margin-top: 20px;
+  }
+
+
+  /* Legal Pages */
+
+  .legal-page h1 {
+    font-size: 42px;
+  }
+
+
+  /* Commands */
+
+  .command-row {
+    display: block;
+  }
+
+  .command-row span {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 5px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section,
+  .callout,
+  .legal-home {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section h2,
+  .callout h2 {
+    font-size: 32px;
+  }
+
+  .legal-home-card {
+    padding: 23px;
+  }
+
+  .callout > div {
+    padding: 25px;
+  }
+
+}
